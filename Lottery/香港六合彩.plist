@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>playedName</key>
+		<string>特码</string>
+		<key>playedId</key>
+		<string>lhc_tm</string>
+		<key>playCategoryName</key>
+		<string>特码</string>
+		<key>numberCount</key>
+		<integer>1</integer>
+		<key>playDesc</key>
+		<string>当期开奖的最后一个号码叫“特码”，若投注的号码与开奖特码相同，即中奖</string>
+		<key>numberPanModels</key>
+		<array>
+			<dict>
+				<key>selectStrings</key>
+				<string></string>
+				<key>numberPanType</key>
+				<string>特码</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

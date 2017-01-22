@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="resultCell" rowHeight="102" id="KGk-i7-Jjw" customClass="LotteryResultCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4w-SL-qQy" userLabel="productNameLabel">
+                        <rect key="frame" x="10" y="10" width="34" height="15"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9Q-7l-mj8" userLabel="periodNameLabel">
+                        <rect key="frame" x="54" y="11" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.51764705882352946" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDr-8F-wcY" userLabel="addTimeLabel">
+                        <rect key="frame" x="95" y="11" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.51764705882352946" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7x-1t-ULy" userLabel="numbersView">
+                        <rect key="frame" x="20" y="35" width="247" height="57"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ou-LO-aqR" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="100" width="287" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="kiq-Do-Iks"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="p4w-SL-qQy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="29O-LN-mqO"/>
+                    <constraint firstItem="c9Q-7l-mj8" firstAttribute="leading" secondItem="p4w-SL-qQy" secondAttribute="trailing" constant="10" id="7ie-Xx-Cpe"/>
+                    <constraint firstAttribute="trailing" secondItem="H7x-1t-ULy" secondAttribute="trailing" constant="20" id="HMV-7q-RMC"/>
+                    <constraint firstAttribute="trailing" secondItem="0Ou-LO-aqR" secondAttribute="trailing" id="I5D-FM-SyR"/>
+                    <constraint firstItem="c9Q-7l-mj8" firstAttribute="bottom" secondItem="p4w-SL-qQy" secondAttribute="bottom" id="Kxw-Cx-djb"/>
+                    <constraint firstItem="H7x-1t-ULy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Nfi-mu-uYw"/>
+                    <constraint firstItem="H7x-1t-ULy" firstAttribute="top" secondItem="p4w-SL-qQy" secondAttribute="bottom" constant="10" id="SUY-RD-TTS"/>
+                    <constraint firstItem="VDr-8F-wcY" firstAttribute="bottom" secondItem="c9Q-7l-mj8" secondAttribute="bottom" id="Ts6-Ca-kge"/>
+                    <constraint firstAttribute="bottom" secondItem="0Ou-LO-aqR" secondAttribute="bottom" id="XNK-gf-MfL"/>
+                    <constraint firstItem="c9Q-7l-mj8" firstAttribute="top" secondItem="p4w-SL-qQy" secondAttribute="top" id="ZFX-Xc-wjv"/>
+                    <constraint firstItem="VDr-8F-wcY" firstAttribute="top" secondItem="c9Q-7l-mj8" secondAttribute="top" id="bOe-Aj-cw8"/>
+                    <constraint firstItem="VDr-8F-wcY" firstAttribute="leading" secondItem="c9Q-7l-mj8" secondAttribute="trailing" constant="10" id="bR8-FT-Hun"/>
+                    <constraint firstItem="0Ou-LO-aqR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hgc-Pz-lW9"/>
+                    <constraint firstAttribute="bottom" secondItem="H7x-1t-ULy" secondAttribute="bottom" constant="10" id="n2T-QS-n8t"/>
+                    <constraint firstItem="p4w-SL-qQy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="u3X-gF-lzY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addTimeLabel" destination="VDr-8F-wcY" id="EIV-fV-2ea"/>
+                <outlet property="numbersView" destination="H7x-1t-ULy" id="QSI-Ad-V1Y"/>
+                <outlet property="periodNameLabel" destination="c9Q-7l-mj8" id="ZTa-80-QdV"/>
+                <outlet property="productNameLabel" destination="p4w-SL-qQy" id="xgw-JV-wZa"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

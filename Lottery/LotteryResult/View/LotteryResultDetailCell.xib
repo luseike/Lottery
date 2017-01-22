@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resultDetailCell" rowHeight="103" id="KGk-i7-Jjw" customClass="LotteryResultDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYk-jA-wOV" userLabel="periodNameLabel">
+                        <rect key="frame" x="10" y="10" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50980392159999999" green="0.51372549020000002" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arj-js-Z73" userLabel="addTimeLabel">
+                        <rect key="frame" x="51" y="10" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50980392159999999" green="0.51372549020000002" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTR-df-KAy" userLabel="numbersView">
+                        <rect key="frame" x="20" y="35" width="280" height="57.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TnE-cS-qTJ" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="101" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Uva-b4-Crx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OTR-df-KAy" secondAttribute="trailing" constant="20" id="58Z-Oc-Fsh"/>
+                    <constraint firstItem="oYk-jA-wOV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5hp-hO-RSA"/>
+                    <constraint firstItem="OTR-df-KAy" firstAttribute="top" secondItem="oYk-jA-wOV" secondAttribute="bottom" constant="10" id="8AA-rn-PVl"/>
+                    <constraint firstItem="Arj-js-Z73" firstAttribute="bottom" secondItem="oYk-jA-wOV" secondAttribute="bottom" id="Blk-4a-z0O"/>
+                    <constraint firstAttribute="bottom" secondItem="OTR-df-KAy" secondAttribute="bottom" constant="10" id="LJX-ID-q44"/>
+                    <constraint firstAttribute="bottom" secondItem="TnE-cS-qTJ" secondAttribute="bottom" id="P30-jg-gra"/>
+                    <constraint firstItem="oYk-jA-wOV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QKk-NP-puK"/>
+                    <constraint firstAttribute="trailing" secondItem="TnE-cS-qTJ" secondAttribute="trailing" id="TUR-YM-rDR"/>
+                    <constraint firstItem="TnE-cS-qTJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Tms-kz-YwY"/>
+                    <constraint firstItem="Arj-js-Z73" firstAttribute="leading" secondItem="oYk-jA-wOV" secondAttribute="trailing" constant="10" id="hvv-WT-wYA"/>
+                    <constraint firstItem="OTR-df-KAy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="kqY-1R-qbZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addTimeLabel" destination="Arj-js-Z73" id="ipA-uI-VWL"/>
+                <outlet property="numbersView" destination="OTR-df-KAy" id="1w0-vb-gq2"/>
+                <outlet property="periodNameLabel" destination="oYk-jA-wOV" id="qMP-DZ-JVj"/>
+            </connections>
+            <point key="canvasLocation" x="229" y="254.5"/>
+        </tableViewCell>
+    </objects>
+</document>

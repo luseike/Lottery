@@ -1,0 +1,19 @@
+开发者账号
+aoliandatong@gmail.com   Aishishabi88
+
+——————————————————————————————————————————————
+
+
+参照效果网站
+http://www.mingcai588.com:8088/main/lottery
+
+
+
+正式环境测试账号
+测试账号：venice2 888888
+
+————————————————————————————————————————————————
+http://jinshacp.com:8888/   用户名: jinsha1  jinsha2 ，密码888888
+
+接口地址：
+http://www.jinshacp.com:8888/api-doc/index.html

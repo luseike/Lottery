@@ -1,0 +1,45 @@
+//
+//  Lottery-Prefix.pch
+//  Lottery
+//
+//  Created by jiangyuanlu on 16/5/10.
+//  Copyright © 2016年 Chris Deng. All rights reserved.
+//
+
+#ifndef Lottery_Prefix_pch
+#define Lottery_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Constants.h"
+#import "UIColor+Extension.h"
+#import "UIView+Extension.h"
+#import "NSString+Extension.h"
+#import <SVProgressHUD.h>
+#import <AFNetworking.h>
+
+
+#import "LotteryType.h"
+#import "ProductVo.h"
+#import "PeriodVo.h"
+#import "VipVo.h"
+#import "NSDate+Extension.h"
+
+
+// 常量值
+#define KScreenWidth [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+#define KIPhone6Width 375.0
+#define KIPhone6Height 667.0
+#define KBGColor [UIColor colorWithHexString:@"fefdf8"]
+
+//#define KServerUrl @"http://dj1.jdiy.org:1234/api"
+#define KServerUrl @"http://weinisicp.com/api"
+
+#define KGetVip [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"vipvo.data"]]
+
+#define KSavePath(vip) [NSKeyedArchiver archiveRootObject:vip toFile:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"vipvo.data"]]
+;
+
+#endif /* Lottery_Prefix_pch */

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoDrawView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noDraw" translatesAutoresizingMaskIntoConstraints="NO" id="u7Z-4l-D6I" userLabel="typeImgView">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="98"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="98" id="Rsp-1o-P5d"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请提现后，在此处可查看提现进度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhk-Up-rJ8" userLabel="infoLabel">
+                    <rect key="frame" x="0.0" y="103" width="300" height="17"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.5607843137254902" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="u7Z-4l-D6I" secondAttribute="trailing" id="1Fd-BT-wHM"/>
+                <constraint firstItem="u7Z-4l-D6I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6DN-WJ-6g9"/>
+                <constraint firstAttribute="trailing" secondItem="Lhk-Up-rJ8" secondAttribute="trailing" id="NwC-g4-Pc4"/>
+                <constraint firstItem="u7Z-4l-D6I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XfL-eU-2Mm"/>
+                <constraint firstItem="Lhk-Up-rJ8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hFw-50-uA0"/>
+                <constraint firstItem="Lhk-Up-rJ8" firstAttribute="top" secondItem="u7Z-4l-D6I" secondAttribute="bottom" constant="5" id="v7h-4h-yGP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="infoLabel" destination="Lhk-Up-rJ8" id="D8p-GX-BxA"/>
+                <outlet property="typeImgView" destination="u7Z-4l-D6I" id="UnQ-Xt-I9W"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="176"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noDraw" width="94" height="87"/>
+    </resources>
+</document>
